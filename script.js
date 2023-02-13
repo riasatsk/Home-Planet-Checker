@@ -9,12 +9,13 @@ let planet = [
   "neptune",
   "pluto",
 ];
-let random = Math.random();
+
+
+function random_planet() {
+  let random = Math.random();
 let random_number = Math.ceil(random * 8);
 
 let myPlanet = planet[random_number];
-
-function random_planet() {
   document.getElementById(
     "planet"
   ).innerHTML = `Your home planet is ${myPlanet} , Let's Go to ${myPlanet}🚀👨‍🚀`;
