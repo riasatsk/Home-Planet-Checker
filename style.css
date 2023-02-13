@@ -45,5 +45,31 @@ footer a {
   color: #555;
   text-decoration: none;
 }
+.play-button {
+  display: inline-block;
+
+  background-color: #4285F4;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.play-button i {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.play-button:hover {
+  cursor: pointer;
+  background-color: #3367D6;
+}
+.button-container {
+  text-align: center;
+}
 
   

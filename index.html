@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Check Your Home Planet</title>
   </head>
   <body
@@ -25,6 +28,24 @@
       <button class="beautiful-button" id="myButton" onclick="random_planet();">
         Let's Check
       </button>
+      <p></p>
+      <button
+        class="beautiful-button"
+        style="
+          background-color: #4285f4;
+          border: none;
+          border-radius: 4px;
+          color: #ffffff;
+          padding: 8px 16px;
+          font-size: 16px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+        "
+        id="play-button"
+      >
+        <span>Play🔊</span>
+      </button>
       <audio id="clickSound" src="assets/click.wav"></audio>
     </div>
 
@@ -37,37 +58,59 @@
     >
       <p id="planet"></p>
       <div class="paragraph">
-        <p id="quote">"Welcome to Home Planet Checker! Your ultimate destination to explore the universe and learn about the planets in our solar system. Discover fascinating facts, breathtaking images, and up-to-date news about our galactic neighborhood. Whether you're a space enthusiast or just curious about what's out there, Home Planet Checker has something for everyone. So sit back, relax, and let's embark on a journey through the cosmos together."</p>
+        <p id="quote">
+          "Welcome to Home Planet Checker! Your ultimate destination to explore
+          the universe and learn about the planets in our solar system. Discover
+          fascinating facts, breathtaking images, and up-to-date news about our
+          galactic neighborhood. Whether you're a space enthusiast or just
+          curious about what's out there, Home Planet Checker has something for
+          everyone. So sit back, relax, and let's embark on a journey through
+          the cosmos together."
+        </p>
       </div>
+      <audio id="details" src="assets/home.mp3"></audio>
     </div>
     <style>
-        .image-container {
-          display: flex;
-          flex-wrap: wrap;
-        }
-      
-        .image-container img {
-          width: 300px;
-          height: 300px;
-          object-fit: cover;
-          margin: 10px;
-          border-radius: 15px;
-        }
-      </style>
-      
-      <div class="image-container" style="display: flex; justify-content: space-around;">
-        <img id="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/1024px-The_Blue_Marble_%28remastered%29.jpg" alt="">
-        <img id="img2" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Tharsis_and_Valles_Marineris_-_Mars_Orbiter_Mission_%2830055660701%29.png" alt="">
-        <img id="img3" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Jupiter_New_Horizons.jpg" alt="">
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
 
+      .image-container img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin: 10px;
+        border-radius: 15px;
+      }
+    </style>
 
-      </div>
+    <div
+      class="image-container"
+      style="display: flex; justify-content: space-around"
+    >
+      <img
+        id="img1"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/1024px-The_Blue_Marble_%28remastered%29.jpg"
+        alt=""
+      />
+      <img
+        id="img2"
+        src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Tharsis_and_Valles_Marineris_-_Mars_Orbiter_Mission_%2830055660701%29.png"
+        alt=""
+      />
+      <img
+        id="img3"
+        src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Jupiter_New_Horizons.jpg"
+        alt=""
+      />
+    </div>
     <footer>
-  <p>This website Created by Riasat | <a href="https://github.com/riasatsk">Github: @riasatsk</a></p>
-</footer>
-
-      
-
+      <p>
+        This website Created by Riasat |
+        <a href="https://github.com/riasatsk">Github: @riasatsk</a>
+      </p>
+    </footer>
 
     <script src="script.js"></script>
   </body>

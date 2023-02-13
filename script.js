@@ -15,6 +15,12 @@ var sound = document.getElementById("clickSound");
 button.addEventListener("click", function() {
   sound.play();
 });
+var playButton = document.getElementById("play-button");
+var details = document.getElementById("details");
+
+playButton.addEventListener("click", function() {
+  details.play();
+});
 
 
 function random_planet() {
@@ -28,7 +34,7 @@ let myPlanet = planet[random_number];
   if (random_number == 0) {
     document.getElementById("quote").innerHTML =
       "Mercury, the tiny, sizzling hot planet closest to the Sun, is like a baked potato that's been forgotten in the oven for too long. It's so hot that you could probably fry an egg on its surface, if you don't mind a little radiation with your breakfast. And don't even think about trying to grow plants there, because they'd be toast in no time. But if you're a fan of extreme sports, Mercury might be the ultimate destination. You could go snowboarding down the towering peaks of its crater rims, or take a dip in one of its many lava pools for a nice warm bath. Just remember to pack some SPF 10,000 sunscreen and a few extra sets of sunglasses, because you're going to need them!";
-    document.getElementById("img1").src =
+      document.getElementById("img1").src =
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mercury_in_true_color.jpg/1024px-Mercury_in_true_color.jpg";
     document.getElementById("img2").src =
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/PIA19450-PlanetMercury-CalorisBasin-20150501.jpg/1920px-PIA19450-PlanetMercury-CalorisBasin-20150501.jpg";
@@ -62,6 +68,8 @@ let myPlanet = planet[random_number];
     document.getElementById("img3").src =
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Olympus_Mons_alt.jpg/1024px-Olympus_Mons_alt.jpg";
   } else if (random_number == 4) {
+    document.getElementById("details").src="assets/jupiter.mp3"
+
     document.getElementById("quote").innerHTML =
       "Jupiter, the big, bad king of the planets, is like a giant beach ball that's been inflated a little too much. It's so massive that it could swallow up all the other planets in the solar system and still have room for dessert. But don't let its size fool you, Jupiter's got a lot of personality, and it's not afraid to show it off. With swirling storms, colorful clouds, and a never-ending supply of moons, it's a planet that knows how to make an entrance. And if you're lucky, you might catch a glimpse of its famous Great Red Spot, which is like a giant zit that never goes away. Just be careful not to get too close, or you might get sucked into its intense gravity and become a permanent resident. All in all, Jupiter is a planet that's both awe-inspiring and a little intimidating, but it's definitely worth a visit, even if it's just for the Instagram pics.";
     document.getElementById("img1").src =
