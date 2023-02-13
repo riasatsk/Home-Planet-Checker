@@ -35,5 +35,15 @@
     border-radius: 5px;
     background-color: #f5f5f5;
   }
-  
+  footer {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+footer a {
+  color: #555;
+  text-decoration: none;
+}
+
   
