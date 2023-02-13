@@ -9,6 +9,12 @@ let planet = [
   "neptune",
   "pluto",
 ];
+var button = document.getElementById("myButton");
+var sound = document.getElementById("clickSound");
+
+button.addEventListener("click", function() {
+  sound.play();
+});
 
 
 function random_planet() {
