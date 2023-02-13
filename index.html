@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Check Your Home Planet</title>
+  </head>
+  <body
+    style="
+      background-color: azure;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    "
+  >
+    <h2 style="text-align: center">
+      Click the button to check your Home Planet
+    </h2>
+    <div class="container">
+      <!-- <button class="centered-button">Click Me</button> -->
+      <button class="beautiful-button" onclick="random_planet();">
+        Let's Check
+      </button>
+    </div>
+
+    <div
+      style="
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+      "
+    >
+      <p id="planet"></p>
+      <div class="paragraph">
+        <p id="quote"></p>
+      </div>
+    </div>
+    <style>
+        .image-container {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      
+        .image-container img {
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+          margin: 10px;
+          border-radius: 15px;
+        }
+      </style>
+      
+      <div class="image-container" style="display: flex; justify-content: space-around;">
+        <img id="img1" src="" alt="">
+        <img id="img2" src="" alt="">
+        <img id="img3" src="" alt="">
+
+
+      </div>
+      
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
