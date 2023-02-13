@@ -1,13 +1,13 @@
 let planet = [
-  "marcury",
-  "venus",
-  "earth",
-  "mars",
-  "jupiter",
-  "saturn",
-  "uranus",
-  "neptune",
-  "pluto",
+  "Marcury",
+  "Venus",
+  "Earth",
+  "Mars",
+  "Jupiter",
+  "Saturn",
+  "Uranus",
+  "Neptune",
+  "Pluto",
 ];
 var button = document.getElementById("myButton");
 var sound = document.getElementById("clickSound");
@@ -29,7 +29,7 @@ function random_planet() {
   let myPlanet = planet[random_number];
   document.getElementById(
     "planet"
-  ).innerHTML = `Your home planet is ${myPlanet} , Let's Go to ${myPlanet}🚀👨‍🚀`;
+  ).innerHTML = `Your home planet is <h3>${myPlanet}</h3> Let's Go to ${myPlanet}🚀👨‍🚀`;
   if (random_number == 0) {
     document.getElementById("quote").innerHTML =
       "Mercury, the tiny, sizzling hot planet closest to the Sun, is like a baked potato that's been forgotten in the oven for too long. It's so hot that you could probably fry an egg on its surface, if you don't mind a little radiation with your breakfast. And don't even think about trying to grow plants there, because they'd be toast in no time. But if you're a fan of extreme sports, Mercury might be the ultimate destination. You could go snowboarding down the towering peaks of its crater rims, or take a dip in one of its many lava pools for a nice warm bath. Just remember to pack some SPF 10,000 sunscreen and a few extra sets of sunglasses, because you're going to need them!";
